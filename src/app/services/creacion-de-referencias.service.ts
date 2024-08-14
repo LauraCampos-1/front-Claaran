@@ -7,22 +7,22 @@ import { Injectable } from '@angular/core';
 })
 
 export class CreacionDeReferenciasService {
-
+  private url:any = "http://http://18.117.237.108:4003/api"
   constructor(private http: HttpClient) { }
 
   sendDataClient(data:any){
-    return this.http.post<any>(`http://localhost:3001/api/products`,data  )
+    return this.http.post<any>(`${this.url}`,data  )
   }
   postRegister( newReference:any){
-    return this.http.post<any>('http://localhost:3001/api/products', newReference)
+    return this.http.post<any>(`${this.url}`, newReference)
   }
 
   getProductByRef(arancelId: string) {
-    return this.http.get<any>(`http://localhost:3001/api/products/paid/${arancelId}`)
+    return this.http.get<any>(`${this.url}/products/paid/${arancelId}`)
   }
 
   updateProductByRef( ref: string, updatedProduct: any ) {
-    return this.http.patch( `http://localhost:3001/api/products/reference/${ref}`, updatedProduct )
+    return this.http.patch( `${this.url}/products/reference/${ref}`, updatedProduct )
   }
 
 

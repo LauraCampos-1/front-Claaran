@@ -7,11 +7,13 @@
     bottom: 0;
     position: relative;
     /* width: 100vw; */
+    background-color: #42a5ff;
 }
 
 .contenedor > div {
     flex-basis: 32%;
     gap: 1rem;
+    text-align: center;
 }
 
 .container__contact {

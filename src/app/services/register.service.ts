@@ -5,10 +5,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class RegisterService {
-
+  private url:any = "http://http://18.117.237.108:4003/api"
   constructor(private http:HttpClient){}
 
   postRegister( newRegister:any){
-      return this.http.post<any>('http://localhost:3001/api/auth/register', newRegister)
+      return this.http.post<any>(`${this.url}`, newRegister)
   }
 }

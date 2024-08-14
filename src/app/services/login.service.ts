@@ -7,7 +7,7 @@ import { tap } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-
+  private url:any = "http://http://18.117.237.108:4003/api"
   constructor(
     private http: HttpClient,
     private router: Router
@@ -15,7 +15,7 @@ export class LoginService {
 
 
   postLogin(newLogin: any){
-    return this.http.post<any>('http://localhost:3001/api/auth/login',newLogin)
+    return this.http.post<any>(`${this.url}`,newLogin)
       .pipe(
         tap( response => {
           console.log( ':::', response, ':::' );

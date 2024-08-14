@@ -666,6 +666,7 @@ section.section-about {
     bottom: 0;
     position: relative;
     /* width: 100vw; */
+    padding-block-start: 10px ;
 }
 
 .content-about {
@@ -693,6 +694,7 @@ section.section-about {
 
 section.section-servicios {
     padding: 0 1rem;
+    padding-block-end: 10px;
 }
 .section-servicios h2 {
     text-align: center;

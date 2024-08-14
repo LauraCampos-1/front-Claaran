@@ -7,13 +7,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class FooterService {
-
+  private url:any = "http://http://18.117.237.108:4003/api"
    
   
   constructor(private http: HttpClient) { }
 
   sendDataClient(data:any)  {
-    return this.http.post<any>(`http://localhost:3001/api/contacts`, data)
+    return this.http.post<any>(`${this.url}`, data)
 
   }
 
