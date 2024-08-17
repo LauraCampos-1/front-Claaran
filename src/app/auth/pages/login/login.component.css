@@ -1,4 +1,4 @@
-
+/* 
 
 .contenedor {
   border: 1px solid;
@@ -47,10 +47,6 @@ h2 {
   font-style: normal;
 }
 
-/*   form.formulario {
-  width: 30%;
-}
- */
 .campo {
   margin: 1rem ;
 }
@@ -95,4 +91,70 @@ h2 {
     width: 22rem;
     padding: 0rem;
   }
+} */
+
+.login {
+  display: flex;
+}
+
+.login__form {
+  padding: 4rem 6rem;
+}
+
+.login__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__title h4 {
+  color: #064481;
+}
+
+.login__title p {
+  text-align: center;
+  color: #ABA196;
+  padding: 2rem 0;
+}
+
+.login__right {
+  background: #55AAFF;
+  width: 70%;
+  height: 100vh;
+}
+
+.login__right img {
+  height: 100vh;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  border: 3px solid #0A59A8;
+  border-radius: 5px;
+  width: 100%;
+  height: 2.3rem;
+  text-align: center;
+}
+
+button {
+  background: #55AAFF;
+  border: 2px solid #0A59A8;
+  width: 6rem;
+  color: white;
+  border-radius: 22px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.forgot__password {
+  text-decoration: none;
+  color: #064481;
+  font-weight: 500;
+  margin-bottom: 3rem;
 }

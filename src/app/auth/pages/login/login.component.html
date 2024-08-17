@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="contenedor">
   <div class="logo">
       <img class="contenedor_image" src="assets/images/claaran-logo.png" alt="logo claarant">
@@ -44,4 +44,26 @@
 
       </div>
       </div>
+    </div> -->
+
+<section>
+  <div class="login">
+    <div class="login__form">
+      <div class="login__title">
+        <h4>Bienvenidos</h4>
+        <p>Estamos para acompañarte y asegurarnos que no tengas ningún incoveniente con el uso de nuestros sistema.</p>
+      </div>
+      <form>
+        <div class="form__inputs">
+          <input type="text" formControlName="username" placeholder="USUARIO">
+          <input type="password" formControlName="password" placeholder="CONTRASEÑA">
+        </div>
+        <a class="forgot__password">¿Olvidaste tu contraseña?</a>
+        <button (click)="onSubmit()"  [disabled]="loginForm.invalid">Enviar</button>
+      </form>
     </div>
+    <div class="login__right">
+      <img src="assets/images/login-rigth.svg" alt="">
+    </div>
+  </div>
+</section>

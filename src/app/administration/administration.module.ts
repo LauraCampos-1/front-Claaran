@@ -6,8 +6,9 @@ import { CreacionDeReferenciasComponent } from './components/creacion-de-referen
 import { AdministrationRoutingModule } from './administration-routing.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FooterComponent } from '../website/components/shared/footer/footer.component';
+import { footerComponent } from '../website/components/shared/footer/footer.component';
 import { WebsiteRoutingModule } from '../website/website-routing.module';
+import { FooterComponent } from '../components/layout/footer/footer.component';
 
 
 
@@ -16,7 +17,7 @@ import { WebsiteRoutingModule } from '../website/website-routing.module';
     AdministrationComponent,
     DashboardComponent,
     CreacionDeReferenciasComponent,
-    /* FooterComponent */
+    FooterComponent
   ],
   imports: [
     CommonModule,
