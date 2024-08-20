@@ -121,6 +121,12 @@ h2 {
   background: #55AAFF;
   width: 70%;
   height: 100vh;
+
+  img {
+    position: absolute;
+    right: 17%;
+}
+
 }
 
 .login__right img {

@@ -53,7 +53,7 @@
         <h4>Bienvenidos</h4>
         <p>Estamos para acompañarte y asegurarnos que no tengas ningún incoveniente con el uso de nuestros sistema.</p>
       </div>
-      <form>
+      <form [formGroup]="loginForm">
         <div class="form__inputs">
           <input type="text" formControlName="username" placeholder="USUARIO">
           <input type="password" formControlName="password" placeholder="CONTRASEÑA">
@@ -64,6 +64,7 @@
     </div>
     <div class="login__right">
       <img src="assets/images/login-rigth.svg" alt="">
+      <img class="img2" src="assets/images/login-rigth.svg" alt="">
     </div>
   </div>
 </section>
